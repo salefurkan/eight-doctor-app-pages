@@ -7,32 +7,34 @@
   <title>Terms of Use — 8 Doktor</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body data-page-title="title.terms">
   <header class="site-header">
     <div class="site-header-inner">
       <a class="logo" href="index.html">8 <span>Doktor</span></a>
       <nav aria-label="Site">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html" aria-current="page">Terms</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+          <li><a href="terms.html" aria-current="page" data-i18n="nav.terms">Terms</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
         </ul>
       </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
     </div>
   </header>
 
   <main>
-    <h1 class="page-title">Terms of Use</h1>
-    <p class="meta">Last updated: June 1, 2026 · App: 8 Doktor (8 Doctors)</p>
+    <h1 class="page-title" data-i18n="h1.terms">Terms of Use</h1>
+    <p class="meta" data-i18n="meta.privacy">Last updated: June 1, 2026 · App: 8 Doktor (8 Doctors)</p>
 
-    <div class="disclaimer">
+    <div class="disclaimer" data-i18n="disclaimer.terms">
       8 Doktor is a wellness coaching app only. It is not a medical device and does not replace professional healthcare advice.
     </div>
 
-    <section class="lang-block" lang="en">
-      <p class="lang-label">English</p>
-
+    <section class="lang-block" lang="en" hidden>
       <h2>Agreement</h2>
       <p>
         By downloading or using 8 Doktor, you agree to these Terms of Use.
@@ -84,9 +86,7 @@
       <p><a href="mailto:furkan.support@gmail.com">furkan.support@gmail.com</a></p>
     </section>
 
-    <section class="lang-block" lang="tr">
-      <p class="lang-label">Türkçe</p>
-
+    <section class="lang-block" lang="tr" hidden>
       <h2>Sözleşme</h2>
       <p>8 Doktor’u indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.</p>
 
@@ -108,7 +108,13 @@
   </main>
 
   <footer class="site-footer">
-    <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></p>
+    <p>
+      <a href="index.html" data-i18n="footer.home">Home</a> ·
+      <a href="privacy.html" data-i18n="footer.privacy">Privacy</a> ·
+      <a href="support.html" data-i18n="footer.support">Support</a>
+    </p>
   </footer>
+
+  <script src="js/lang.js"></script>
 </body>
 </html>

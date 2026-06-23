@@ -7,28 +7,30 @@
   <title>Support — 8 Doktor</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body data-page-title="title.support">
   <header class="site-header">
     <div class="site-header-inner">
       <a class="logo" href="index.html">8 <span>Doktor</span></a>
       <nav aria-label="Site">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="support.html" aria-current="page">Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+          <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+          <li><a href="support.html" aria-current="page" data-i18n="nav.support">Support</a></li>
         </ul>
       </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
     </div>
   </header>
 
   <main>
-    <h1 class="page-title">Support</h1>
-    <p class="meta">8 Doktor · 8 Doctors</p>
+    <h1 class="page-title" data-i18n="h1.support">Support</h1>
+    <p class="meta" data-i18n="meta.support">8 Doktor · 8 Doctors</p>
 
-    <section class="lang-block" lang="en">
-      <p class="lang-label">English</p>
-
+    <section class="lang-block" lang="en" hidden>
       <h2>Contact</h2>
       <p>
         For questions, feedback, or subscription issues:
@@ -63,9 +65,7 @@
       </p>
     </section>
 
-    <section class="lang-block" lang="tr">
-      <p class="lang-label">Türkçe</p>
-
+    <section class="lang-block" lang="tr" hidden>
       <h2>İletişim</h2>
       <p>
         Sorularınız, geri bildiriminiz veya abonelik konuları için:
@@ -100,13 +100,19 @@
       </p>
     </section>
 
-    <div class="disclaimer">
+    <div class="disclaimer" data-i18n="disclaimer.support">
       In a medical emergency, call your local emergency number. This app does not provide emergency services.
     </div>
   </main>
 
   <footer class="site-footer">
-    <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    <p>
+      <a href="index.html" data-i18n="footer.home">Home</a> ·
+      <a href="privacy.html" data-i18n="footer.privacy">Privacy</a> ·
+      <a href="terms.html" data-i18n="footer.terms">Terms</a>
+    </p>
   </footer>
+
+  <script src="js/lang.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,62 +7,111 @@
   <title>8 Doktor — Sakin Günlük Koçluk</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body data-page-title="title.index">
   <header class="site-header">
     <div class="site-header-inner">
       <a class="logo" href="index.html">8 <span>Doktor</span></a>
       <nav aria-label="Site">
         <ul>
-          <li><a href="index.html" aria-current="page">Ana sayfa</a></li>
-          <li><a href="privacy.html">Gizlilik</a></li>
-          <li><a href="terms.html">Kullanım</a></li>
-          <li><a href="support.html">Destek</a></li>
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+          <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
         </ul>
       </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <h1>Sekiz doğal kaynak,<br>sakin bir günlük ritim</h1>
-    <p class="lead">
-      Su, nefes, hareket ve daha fazlası — streak baskısı olmadan, yalnızca cihazında.
-      8 Doktor, günlük wellness yolculuğuna nazik bir eşlikçidir.
-    </p>
-    <a class="cta" href="https://apps.apple.com/app/id0000000000" rel="noopener">App Store'da yakında</a>
-  </section>
-
-  <div class="pillars" aria-label="Sekiz doktor">
-    <div class="pillar">Su</div>
-    <div class="pillar">Güneş</div>
-    <div class="pillar">Meditasyon</div>
-    <div class="pillar">Uyku</div>
-    <div class="pillar">Doğa</div>
-    <div class="pillar">Gülmek</div>
-    <div class="pillar">Egzersiz</div>
-    <div class="pillar">Beslenme</div>
-  </div>
-
-  <main>
-    <h2>Neden 8 Doktor?</h2>
-    <p>
-      Doğanın sekiz şifa kaynağını günlük alışkanlıklara dönüştürmenize yardımcı olan sakin bir koçluk uygulaması.
-      Verileriniz varsayılan olarak yalnızca cihazınızda kalır; isteğe bağlı Apple Health entegrasyonu ve Premium özellikler mevcuttur.
-    </p>
-
-    <div class="disclaimer">
-      Bu uygulama profesyonel tıbbi tanı, tedavi veya acil durum hizmeti sunmaz.
-      Sağlık kararlarınız için doktorunuza danışın.
+  <section class="lang-block" lang="en" hidden>
+    <div class="hero">
+      <h1>Eight natural sources,<br>a calm daily rhythm</h1>
+      <p class="lead">
+        Water, breath, movement, and more — without streak pressure, only on your device.
+        8 Doctors is a gentle companion for your daily wellness journey.
+      </p>
+      <a class="cta" href="https://apps.apple.com/app/id0000000000" rel="noopener">Coming soon on the App Store</a>
     </div>
 
-    <p>
-      <a href="privacy.html">Gizlilik Politikası</a> ·
-      <a href="terms.html">Kullanım Koşulları</a> ·
-      <a href="support.html">Destek</a>
-    </p>
-  </main>
+    <div class="pillars" aria-label="Eight doctors">
+      <div class="pillar">Water</div>
+      <div class="pillar">Sunlight</div>
+      <div class="pillar">Meditation</div>
+      <div class="pillar">Sleep</div>
+      <div class="pillar">Nature</div>
+      <div class="pillar">Laughter</div>
+      <div class="pillar">Exercise</div>
+      <div class="pillar">Nutrition</div>
+    </div>
+
+    <main>
+      <h2>Why 8 Doctors?</h2>
+      <p>
+        A calm coaching app that helps you turn nature’s eight healing sources into daily habits.
+        Your data stays on your device by default; optional Apple Health integration and Premium features are available.
+      </p>
+
+      <div class="disclaimer">
+        This app does not provide professional medical diagnosis, treatment, or emergency services.
+        Consult your doctor for health decisions.
+      </div>
+
+      <p>
+        <a href="privacy.html" data-i18n="footer.legal.privacy">Privacy Policy</a> ·
+        <a href="terms.html" data-i18n="footer.legal.terms">Terms of Use</a> ·
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </p>
+    </main>
+  </section>
+
+  <section class="lang-block" lang="tr" hidden>
+    <div class="hero">
+      <h1>Sekiz doğal kaynak,<br>sakin bir günlük ritim</h1>
+      <p class="lead">
+        Su, nefes, hareket ve daha fazlası — streak baskısı olmadan, yalnızca cihazında.
+        8 Doktor, günlük wellness yolculuğuna nazik bir eşlikçidir.
+      </p>
+      <a class="cta" href="https://apps.apple.com/app/id0000000000" rel="noopener">App Store'da yakında</a>
+    </div>
+
+    <div class="pillars" aria-label="Sekiz doktor">
+      <div class="pillar">Su</div>
+      <div class="pillar">Güneş</div>
+      <div class="pillar">Meditasyon</div>
+      <div class="pillar">Uyku</div>
+      <div class="pillar">Doğa</div>
+      <div class="pillar">Gülmek</div>
+      <div class="pillar">Egzersiz</div>
+      <div class="pillar">Beslenme</div>
+    </div>
+
+    <main>
+      <h2>Neden 8 Doktor?</h2>
+      <p>
+        Doğanın sekiz şifa kaynağını günlük alışkanlıklara dönüştürmenize yardımcı olan sakin bir koçluk uygulaması.
+        Verileriniz varsayılan olarak yalnızca cihazınızda kalır; isteğe bağlı Apple Health entegrasyonu ve Premium özellikler mevcuttur.
+      </p>
+
+      <div class="disclaimer">
+        Bu uygulama profesyonel tıbbi tanı, tedavi veya acil durum hizmeti sunmaz.
+        Sağlık kararlarınız için doktorunuza danışın.
+      </div>
+
+      <p>
+        <a href="privacy.html" data-i18n="footer.legal.privacy">Gizlilik Politikası</a> ·
+        <a href="terms.html" data-i18n="footer.legal.terms">Kullanım Koşulları</a> ·
+        <a href="support.html" data-i18n="nav.support">Destek</a>
+      </p>
+    </main>
+  </section>
 
   <footer class="site-footer">
     <p>© 2026 8 Doktor · <a href="mailto:furkan.support@gmail.com">furkan.support@gmail.com</a></p>
   </footer>
+
+  <script src="js/lang.js"></script>
 </body>
 </html>
